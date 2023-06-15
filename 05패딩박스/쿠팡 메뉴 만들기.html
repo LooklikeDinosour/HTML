@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {padding: 0; margin: 0;}
+        ul, li {list-style: none;}
+
+
+        .eachmenu {
+            text-align: center;
+            background-color: black;
+        }
+        .eachmenu > li {
+            display: inline-block;
+        }
+       .eachmenu > li > a {
+            display : block;
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            color: white;
+            text-decoration: none;
+            font-size: 30px;
+            
+        }
+        .eachmenu > li > a:hover {
+            background-color: white;
+            text-decoration: underline;
+            background:10px;
+            border-bottom-color:rgb(0, 0, 0);
+            cursor: pointer;
+
+        }
+
+        .bg {
+            height: 500px;
+            background-image: url('노가다.png');
+            background-color: rgba(211, 71, 141, 0.774);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            
+             /* 이미지의 투명도 */
+   
+        }
+
+        .today { height: 50px;
+            line-height: 50px;
+            border: 1px solid #777;
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav class="menu">
+        <ul class="eachmenu">
+            <li><a href="">메뉴</a></li>
+            <li><a href="">메뉴</a></li>
+            <li><a href="">메뉴</a></li>
+            <li><a href="">메뉴</a></li>
+        </ul>
+    </nav>
+
+    <div class="bg">
+
+    </div>
+
+    <p>
+        오늘의 한줄
+    </p>
+
+    <div class="today">
+        오늘의 한줄
+
+    </div>
+
+
+
+    
+    
+</body>
+</html>

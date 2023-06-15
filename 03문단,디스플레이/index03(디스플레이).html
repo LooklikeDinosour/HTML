@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box1 > div {display: inline;} /*인라인으로 변경*/
+        .box2 > span,
+        .box2 > strong,
+        .box2 > small {
+            display: block;
+        }
+
+        .box3 > a {
+            /*인라인자체로는 조절안됌. inline-block으로 해줘야됌*/
+            width: 100px;
+            height: 100px;
+            display: inline-block; /*인라인배치를 하되, 블럭 속성을 가지게 함*/
+        }
+
+        .box4 {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box1">
+        <div>블럭</div>
+        <div>블럭</div>
+        <div>블럭</div>
+    </div>
+
+    <div class="box2">
+        <span>인라인</span>
+        <strong>인라인</strong>
+        <small>인라인</small>
+    </div>    
+
+    <div class="box3">
+        <a href="#">인라인블럭</a>
+        <a href="#">인라인블럭</a>
+        <a href="#">인라인블럭</a>
+    </div>
+    
+    <div class="box4">
+        디스플레이 넌~!
+
+    </div>
+
+
+</body>
+</html>

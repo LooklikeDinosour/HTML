@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {
+            width: 800px;
+            margin: 0 auto;
+            overflow: hidden;
+            border: 1px solid #777;
+           
+        }
+        .box > .card {
+            float:right;
+            width: 50%;
+            height: 100%;
+            border:1px solid #777;
+            box-sizing: border-box;
+            overflow: hidden;
+            
+        }
+        
+        .box > .card > .tc {
+            height: 65%;
+            border:1px solid #777;
+            margin-bottom: 50px  
+        }
+
+        .rr {
+            overflow: hidden;
+        }
+        .rr > .rright {
+            float:right;
+        }
+        .rr > .rleft {
+            float:left;
+        }
+        .btn-area {overflow: hidden;}
+        
+        .btn-area .left {float: left; width:50%}
+        
+        .btn-area .right{float: right; width:50%}
+
+
+    </style>
+
+
+</head>
+<body>
+    <div class ="box">
+        <img src="img/뜐시기.png" alt="사진">
+        <div class="card">
+            <div class="tc">
+                <h3>제목: 패딩바텀5 50px;</h3>
+                <p>내용</p>
+            </div>
+            <div class="rr">
+                <div class="rleft">
+                가격
+                </div>
+                <div class="rright">
+                    10000원
+                </div>
+            </div>
+            <div class="btn-area">
+                <button class="left">장바구니</button>
+                <button class="right">구매하기</button>
+            </div>
+        </div>
+           
+    </div>
+    
+</body>
+</html>

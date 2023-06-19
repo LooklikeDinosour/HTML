@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {padding:0px; margin:0px}
+
+        .bor { border: 1px solid #777;
+            width : 453px;
+            height: 300px;
+            margin:0 auto;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+
+        .bor .lt {  
+            position:absolute;
+            
+        }
+        .bor .rt {
+            float: left;
+            margin-left: 100px;
+        }
+        
+        .tt {
+            width : 350px;
+            height : 150px;
+            
+        }
+    
+        .tt .left {
+            overflow: hidden;
+        }
+
+        .left .right {
+            overflow: hidden;
+            float: left;
+        }
+
+     
+        
+        button {
+            float:right
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="bor">
+        <div class ="lt">
+            <img src="img/bgimg.png" alt="생선" class="fish">
+        </div>
+        <div class="rt">
+            <textarea class="tt"></textarea>
+            <div class ="left">
+                <div class ="right">
+                    <input type="text" class="up">
+                    <input type="text" class="down">    
+                </div>
+                <button>등록하기</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
